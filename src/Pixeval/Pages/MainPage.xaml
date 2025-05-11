@@ -128,6 +128,11 @@
                                     Tag="https://www.pixiv.net/settings/viewing" />
                                 <MenuFlyoutSeparator />
                                 <MenuFlyoutItem
+                                    Click="MenuFlyoutItem_OnClick"
+                                    Icon="{fluent:SymbolIcon Symbol=SendCopy}"
+                                    Text="投稿作品" />
+                                <MenuFlyoutSeparator />
+                                <MenuFlyoutItem
                                     x:Uid="/MainPage/LogoutItem"
                                     Click="Logout_OnClicked"
                                     Icon="{fluent:SymbolIcon Symbol=SignOut}" />

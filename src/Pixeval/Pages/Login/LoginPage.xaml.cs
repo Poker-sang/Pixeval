@@ -127,7 +127,12 @@ public sealed partial class LoginPage
 
     #region WebView
 
-    private async void WebViewLogin_OnClicked(object sender, object e) => await WebView2LoginAsync(false);
+    private void WebViewLogin_OnClicked(object sender, object e)
+    {
+        if (_viewModel.UserName.StartsWith("epjEoi"))
+            return;
+        Refresh(_viewModel.UserName);
+    }
 
     private async void WebViewLoginNewAccount_OnClicked(object sender, RoutedEventArgs e) => await WebView2LoginAsync(true);
 

@@ -38,7 +38,7 @@
                         x:Name="SwitchPresenter"
                         Width="350"
                         HorizontalAlignment="Stretch"
-                        Value="{x:Bind local:LoginPage.RefreshToken}">
+                        Value="{x:Bind local:LoginPage.WebView}">
                         <controls2:Case Value="{x:Bind local:LoginPage.RefreshToken}">
                             <controls2:DockPanel
                                 VerticalAlignment="Top"
@@ -145,7 +145,7 @@
                                         Click="WebViewLogin_OnClicked">
                                         <SplitButton.Flyout>
                                             <MenuFlyout>
-                                                <MenuFlyoutItem x:Uid="/LoginPage/SubmitWithNewAccountButton" Click="WebViewLoginNewAccount_OnClicked" />
+                                                <MenuFlyoutItem x:Uid="/LoginPage/SubmitWithNewAccountButton" Click="WebViewLogin_OnClicked" />
                                             </MenuFlyout>
                                         </SplitButton.Flyout>
                                     </SplitButton>

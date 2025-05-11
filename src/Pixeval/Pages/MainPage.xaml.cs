@@ -499,4 +499,9 @@ public sealed partial class MainPage
             this.ErrorGrowl(MiscResources.ExceptionEncountered, e.ToString());
         }
     }
+
+    private void MenuFlyoutItem_OnClick(object sender, RoutedEventArgs e)
+    {
+        MainPageRootTab.AddPage(_viewModel.PostTag);
+    }
 }

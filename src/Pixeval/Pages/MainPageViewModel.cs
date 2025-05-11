@@ -59,6 +59,8 @@ public partial class MainPageViewModel : UiObservableObject
 
     public NavigationViewTag<SearchWorksPage> SearchWorksTag { get; } = new(MainPageResources.SearchWorksResult);
 
+    public NavigationViewTag<PostPage> PostTag { get; } = new("投稿作品");
+
     public IReadOnlyList<INavigationViewItem> MenuItems =>
     [
         new NavigationViewTag<RecommendationPage>(MainPageResources.RecommendationsTabContent) { ImageUri = GetIconUri("recommendations") },

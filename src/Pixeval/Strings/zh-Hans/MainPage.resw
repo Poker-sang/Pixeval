@@ -148,7 +148,7 @@
     <value>关注动态</value>
   </data>
   <data name="RecommendationsTab.Content" xml:space="preserve">
-    <value>每日推荐</value>
+    <value>推荐作品</value>
   </data>
   <data name="DownloadListTab.Content" xml:space="preserve">
     <value>下载列表</value>
