@@ -70,6 +70,7 @@ public partial class MainPageViewModel : UiObservableObject
         new NavigationViewTag<RecommendUsersPage>(MainPageResources.RecommendUsersTabContent) { ImageUri = GetIconUri("recommend-user") },
         new NavigationViewTag<RecentPostsPage>(MainPageResources.RecentPostsTabContent) { ImageUri = GetIconUri("recent-posts") },
         new NavigationViewTag<NewWorksPage>(MainPageResources.NewWorksTabContent) { ImageUri = GetIconUri("new-works") },
+        new NavigationViewTag<ChattingPage>("交流论坛") { ImageUri = GetIconUri("feed") },
         new NavigationViewSeparator(),
         new NavigationViewTag<BrowsingHistoryPage>(MainPageResources.HistoriesTabContent) { ImageUri = GetIconUri("history") },
         new NavigationViewTag<DownloadPage>(MainPageResources.DownloadListTabContent) { ImageUri = GetIconUri("download-list") }

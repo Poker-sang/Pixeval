@@ -128,23 +128,6 @@
         <ProjectCapability Include="Msix" />
     </ItemGroup>
 
-    <ItemGroup>
-      <None Remove="Controls\WorkInfoUserCard.xaml" />
-      <None Remove="Pages\PostPage.xaml" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Page Update="Pages\PostPage.xaml">
-        <Generator>MSBuild:Compile</Generator>
-      </Page>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Page Update="Controls\WorkInfoUserCard.xaml">
-        <Generator>MSBuild:Compile</Generator>
-      </Page>
-    </ItemGroup>
-
     <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
         <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
     </PropertyGroup>
